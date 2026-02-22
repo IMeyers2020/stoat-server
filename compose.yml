@@ -16,8 +16,13 @@ services:
 
   # Redis: Event message broker & KV store
   redis:
-    image: docker.io/eqalpha/keydb:6.3.3
+    image: docker.io/eqalpha/keydb:arm64_v6.3.3
     restart: always
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   # RabbitMQ: Internal message broker
   rabbit:
