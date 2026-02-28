@@ -36,7 +36,7 @@ echo "  - \"http://voice-ingress:8500/worldwide\"" >> livekit.yml
 echo "Adding livekit node configuration to Revolt.toml..."
 echo "" >> Revolt.toml
 echo "[api.livekit.nodes.worldwide]" >> Revolt.toml
-echo "url = \"http://livekit:7880\"" >> Revolt.toml
+echo "url = \"http://livekit:7881\"" >> Revolt.toml
 echo "lat = 0.0" >> Revolt.toml
 echo "lon = 0.0" >> Revolt.toml
 echo "key = \"$livekit_key\"" >> Revolt.toml

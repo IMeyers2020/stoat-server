@@ -424,7 +424,7 @@ db.invites.insertOne({ _id: "enter_an_invite_code_here" })
 > [!IMPORTANT]
 > As of February 20, 2026, there was an error in the `generate_config.sh` script. Please apply the following changes to your configuration:
 >
-> In `Revolt.toml`, under the section `[api.livekit.nodes.worldwide]`, change the url value to `http://livekit:7880`
+> In `Revolt.toml`, under the section `[api.livekit.nodes.worldwide]`, change the url value to `http://livekit:7881`
 >
 > In `livekit.yml`, under the section `webhook`, change the first line under `url` to `http://voice-ingress:8500/worldwide`
 >
