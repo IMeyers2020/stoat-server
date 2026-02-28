@@ -36,11 +36,7 @@
 
 	route /livekit* {
 		uri strip_prefix /livekit
-		reverse_proxy http://livekit:7881 {
-			transport http {
-				versions 1.1
-			}
-		}
+		reverse_proxy http://livekit:7880
 	}
 
 	route /ingress* {
