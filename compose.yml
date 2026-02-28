@@ -189,6 +189,9 @@ services:
         condition: service_started
     command: --config /etc/livekit.yml
     restart: always
+    ports:
+      - "7881:7881"
+      - "50000-60000:50000-60000/udp"
     volumes:
       - type: bind
         source: ./livekit.yml
